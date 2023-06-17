@@ -3,29 +3,54 @@
     display: flex
     justify-content: space-around
     border-bottom: 1px solid $main_color
+    padding: 23px 76px
     &__wrapper 
+        width: 100%
         display: flex
-        img
-            margin-top: 20px
+
     &__menu
         display: flex
         justify-content: space-between
-        margin-top: 40px
-        width: auto
+        width: 640px
         list-style-type: none
     &__item
         a
+            font-size: 14px
             @include linkWithoutFormatting
+        a:active
+            color: $main_color2
     &__personal
         display: flex
-        margin-top: 40px
-        img
-            display: block
-            width: 30px
-            height: 30px
-            margin: -6px 10px 0 0
+        width: 230px
+        .pics
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            img
+                @include headerPic
+            .user
+                display: block
+                width: 30px
+                height: 30px
+                margin: -6px 10px 0 0
+            .call
+                display: none
+            .favourite
+                display: none
+            .cart
+                display: none
+            .hamburger
+                display: none
+                div
+                    width: 20px
+                    height: 2px
+                    background-color: $main_color
+                    margin-bottom: 6px  
+                    &:last-child
+                        margin-bottom: 0
         span
             a
+                font-size: 14px
                 @include linkWithoutFormatting
             
         

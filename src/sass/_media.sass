@@ -1,0 +1,160 @@
+
+
+    // big screen 4k
+
+@media (min-width:2000px)
+.header
+    height: 105px
+    &__wrapper
+        img
+            // height: 72px
+            margin-right: 20px
+    &__menu
+        width: 950px
+    &__item
+        a
+            font-size: 27px
+    &__personal
+        margin-top: 17px
+        width: 330px
+        span
+            font-size: 27px
+            a
+                font-size: 27px
+        .pics
+            .img
+                width: 50px
+                height: 50px
+                margin-right: 20px
+
+
+    // big screen laptop
+
+@media ((min-width:1441px) and (max-width:1999px))
+    .header
+        &__menu
+            width: 720px
+        &__item
+            a
+                font-size: 19px
+        &__personal
+            span
+                font-size: 19px
+                a
+                    font-size: 19px
+            .pics
+                .user
+                    width: 35px
+                    height: 35px
+
+
+// laptop
+@media ((min-width: 993px) and (max-width:1440px))
+    .header
+        height: 70px
+        &__wrapper
+           img
+                height: 40px
+                margin-top: -10px
+        &__menu
+            width: 460px
+            margin-top: 0
+        &__item
+            a 
+                font-size: 12px
+        &__personal
+            margin-top: 0
+            width: 170px
+            span
+                font-size: 12px
+                a
+                    font-size: 12px
+            .pics
+                .user
+                    width: 24px
+                    height: 24px
+                    margin-right: 10px
+
+
+// macbook
+@media ((min-width: 769px) and (max-width:992px))
+    .header
+        position: relative
+        height: 60px
+        padding: 18px 
+        justify-content: space-between
+        &__logo
+            
+            img
+                margin-top: -5px
+                margin-right: 0
+                width: 120px
+                height: 32px
+        &__menu
+            width: 505px
+            margin-top: 0
+        &__item
+            a
+                font-size: 13px
+        &__personal
+            margin-top: 0
+            span
+                display: none
+            .pics
+                width: 70px
+                position: absolute
+                right: 0
+                margin-right: 18px
+                .call
+                    @include headerPic
+                    margin: 0 20px 0 0
+                .user
+                    @include headerPic
+                    margin: 0 
+
+// tablet
+// @media ((min-width: 577px) and (max-width:768px))
+@media ( max-width:  768px)
+    
+    .header
+        height: 56px
+        padding: 12px 17px
+        &__menu
+            display: none
+        &__logo
+            img
+                width: 120px
+                height: 30px
+        &__personal
+            margin-top: 4px
+            span
+                display: none
+            .pics
+                margin-right: 18px
+                min-width: 200px
+                .img
+                    display: block
+                    width: 20px
+                    height: 20px
+                .user
+                    margin-top: 0
+                .hamburger
+                    display: block
+
+
+// mobile phone
+@media (max-width:576px)
+    .header
+        &__personal
+            width: auto
+            span
+                display: none
+            .pics
+                min-width: 140px
+                .hamburger
+                    display: block
+                .img
+                    display: block
+                    width: 16px
+                    height: 16px
+                    margin-right: 10px
