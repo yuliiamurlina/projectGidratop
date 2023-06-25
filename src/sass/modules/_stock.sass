@@ -1,0 +1,62 @@
+.stock
+    padding: 60px 75px
+    height: 650px
+    &__wrapper
+        margin-top: 40px
+        display: flex
+        justify-content: space-between
+        a
+            color: $main_color2
+            text-decoration: none
+            margin-top: 38px
+    &__header
+        color: #15244F
+        font-size: 35px
+        font-weight: 700
+        z-index: 1
+    &__subheader
+        font-weight: 700
+        font-size: 110px
+        position: absolute
+        line-height: 0
+        color: $light_color
+        margin: 12px 0 0 55px 
+        z-index: -1
+    &__slider
+        margin-top: 30px
+        position: relative
+        .content
+            width: 100%
+            display: flex
+            justify-content: space-between
+            a
+                width: 30%
+                img
+                    width: 100%
+        .dots
+            display: flex
+            flex-direction: row
+            position: absolute
+            bottom: -70px
+            right: 50%
+            transform: translateX(50%)
+            .dots
+                width: 87px
+                @include dots
+                transform: none
+                position: static
+                margin: 20px
+            .arrow
+                width: 45px
+                height: 45px
+                border: 1px solid #f1f2f6
+                padding: 11px 15px
+                div
+                    @include arrowDiv
+            .prev
+                div
+                    transform: rotate(135deg)
+            .next
+                padding-left: 15px
+                div
+                    transform: rotate(-45deg)

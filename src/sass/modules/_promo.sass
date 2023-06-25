@@ -1,5 +1,7 @@
 .promo
-    height: 580px
+    height: 640px
+    margin-top: 160px
+    position: relative
     &__slides
         .content
             display: none
@@ -9,6 +11,8 @@
             position: absolute
             left: 0
             z-index: -1
+            height: 600px
+            object-fit: cover
     &__mask
         display: flex
         flex-direction: column
@@ -17,7 +21,7 @@
         position: absolute
         right: 0
         background-color: rgba(255, 255, 255, 0.5)
-        padding: 130px 20px
+        padding: 130px 20px 0
 
         h1
             font-size: 30px
@@ -37,37 +41,24 @@
             background-color: $main_color2
             color: #fff
             cursor: pointer
-    &__slider
-        .prev
-            @include arrowBack
-            border-radius: 0 5px 5px 0
-            left: 0
-            div
-                @include arrowDiv
-                transform: rotate(135deg)
-        .next
-            @include arrowBack
-            border-radius: 5px 0 0 5px 
-            right: 0
-            div
-                @include arrowDiv
-                transform: rotate(-45deg)
-        .dots
-            margin: 30px 0
-            display: flex
-            width: 87px
-            justify-content: space-between
-            position: absolute
-            bottom: 0
-            right: 50%
-            
-            div
-                height: 7px
-                width: 23px
-                background-color: $main_color
-                cursor: pointer
-                &.active
-                    background-color: $main_color2
+    .prev
+        @include arrowBack
+        border-radius: 0 5px 5px 0
+        left: 0
+        div
+            @include arrowDiv
+            transform: rotate(135deg)
+    .next
+        @include arrowBack
+        border-radius: 5px 0 0 5px 
+        right: 0
+        div
+            @include arrowDiv
+            transform: rotate(-45deg)
+    .dots
+        @include dots
+        width: 87px
+
 
                     
 

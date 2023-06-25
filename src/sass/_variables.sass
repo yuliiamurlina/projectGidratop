@@ -1,5 +1,6 @@
 $main_color: #6F7682
 $main_color2: #4798DE 
+$light_color: #f1f2f6
 
 @mixin linkWithoutFormatting 
     color: $main_color
@@ -14,11 +15,12 @@ $main_color2: #4798DE
 @mixin arrowBack
     width: 45px
     height: 45px
-    background-color: rgba(255, 255, 255, 0.5)
+    background-color: rgba(241, 242, 246, 0.3)
     border: none
     position: absolute
     top: 50%
     cursor: pointer
+    transform: translateY(-50%)
 
     
 @mixin arrowDiv
@@ -27,6 +29,35 @@ $main_color2: #4798DE
     display: inline-block
     padding: 6px
     margin-top: 5px
+
+@mixin arrowBack2000
+    width: 85px
+    height: 85px
+    div
+        padding: 14px
+        border-width: 0 7px 7px 0
+
+
+@mixin arrowBack375
+    height: 33px
+    width: 33px
+    div
+        padding: 5px     
+
+@mixin dots
+    display: flex
+    justify-content: space-between
+    position: absolute
+    bottom: 0
+    right: 50%
+    transform: translateX(50%)
+    div
+        height: 7px
+        width: 23px
+        background-color: $light_color
+        cursor: pointer
+        &.active
+            background-color: $main_color2
 
 
     

@@ -3,43 +3,90 @@
     // big screen 4k
 
 @media (min-width:2000px)
-.header
-    height: 105px
-    &__wrapper
-        img
-            // height: 72px
-            margin-right: 20px
-    &__menu
-        width: 950px
-    &__item
-        a
-            font-size: 27px
-    &__personal
-        margin-top: 17px
-        width: 330px
-        span
-            font-size: 27px
+    .header
+        height: 105px
+        &__wrapper
+            img
+                // height: 72px
+                margin-right: 20px
+        &__menu
+            width: 950px
+            margin: 11px 0 0 50px
+        &__item
             a
                 font-size: 27px
-        .pics
-            .img
-                width: 50px
-                height: 50px
-                margin-right: 20px
+        &__personal
+            margin-top: 17px
+            width: 330px
+            span
+                font-size: 27px
+                a
+                    font-size: 27px
+            .pics
+                .img
+                    width: 50px
+                    height: 50px
+                    margin-right: 20px
+    .subheader
+        margin-top: 118px
+
+    .promo
+        height: 890px
+        &__slides
+            .content-active
+                height: 860px
+        &__mask
+            padding-left: 64px
+            height: 860px
+            h1
+                line-height: 90px
+                font-size: 65px
+            span
+                font-size: 117px
+                margin-top: 40px
+            button
+                margin-top: 120px
+                width: 340px
+                height: 100px
+                font-size: 35px 
+                border-radius: 11px
+        // &__slider
+        //     height: 430px
+        //     transform: translateY(-85%)
+        .prev
+            @include arrowBack2000
+        .next
+            @include arrowBack2000
+        .dots
+            margin-top: 888px
+            transform: translateX(50%)
+            width: 200px
+            div
+                width: 57px
+                height: 12px
+    
+    .stock
+        margin-top: 200px
+    
 
 
     // big screen laptop
 
 @media ((min-width:1441px) and (max-width:1999px))
     .header
+        padding: 38px 76px 0
+        &__logo
+            margin-top: -16px
         &__menu
             width: 720px
+            margin-left: 30px
         &__item
             a
                 font-size: 19px
         &__personal
             span
                 font-size: 19px
+                
                 a
                     font-size: 19px
             .pics
@@ -47,6 +94,27 @@
                     width: 35px
                     height: 35px
 
+    .subheader
+        margin-top: 108px
+    
+    .promo
+        &__mask
+            padding-left: 40px
+            height: 600px
+            h1
+                font-size: 39px
+                line-height: 60px
+            button
+                font-size: 24px
+                width: 200px
+                height: 60px
+            span
+                margin-top: 11px
+
+
+
+    .stock
+        margin-top: 140px
 
 // laptop
 // @media ((min-width: 993px) and (max-width:1440px))
@@ -60,7 +128,7 @@
                 margin-top: -10px
         &__menu
             width: 500px
-            margin-top: 0
+            margin-left: 30px
         &__item
             a 
                 font-size: 14px
@@ -105,7 +173,6 @@
 @media   ( max-width:  992px)
     
     .header
-        position: relative
         height: 60px
         padding: 18px 
         justify-content: space-between
@@ -140,7 +207,8 @@
     
     .subheader
         height: 64px
-        padding: 20px
+        padding: 13px 27px
+        margin-top: 70px
         &__wrapper
             .catalog
                 width: 130px
@@ -172,6 +240,25 @@
                 span
                     display: none
 
+    .promo
+        height: 350px
+        margin-top: 124px
+        &__mask
+            padding-top: 55px
+            width: 45%
+            h1
+                font-size: 22px 
+                line-height: 35px
+            span
+                font-size: 40px
+        &__slides
+            .content-active
+                height: 320px
+        .dots
+            width: 70px
+            div
+                height: 6px
+                width: 15px
 
 // tablet
 // @media ((min-width: 577px) and (max-width:768px))
@@ -215,6 +302,7 @@
 // mobile phone
 @media (max-width:576px)
     .header
+        padding: 17px
         &__personal
             width: auto
             span
@@ -226,13 +314,22 @@
                     height: 16px
 
     .subheader
-        padding: 10px
+        padding: 16px
         &__wrapper
             .search
                 width: 180px
                 margin-left: 13px
                 input
                     width: 140px
+    
+    .promo
+        margin-top: 120px
+        height: 180px
+        &__slides
+            .content-active
+                height: 156px
+        &__mask
+            // height: 156px
 
                 
 
@@ -252,3 +349,31 @@
                         margin-right: 7px
                 &__text
                     font-size: 12px
+    
+    .promo
+        height: 180px
+        &__slides
+            .content-active
+                height: 156px
+        &__mask
+            height: 156px
+            padding-top: 28px
+            h1
+                font-size: 14px
+                line-height: 20px
+            span
+                font-size: 25px
+                line-height: 36px
+            button
+                margin-top: 9px
+                width: 100px
+                height: 30px
+        .next
+            @include arrowBack375
+        .prev
+            @include arrowBack375
+        .dots
+            width: 40px
+            div
+                width: 10px
+                height: 4px
