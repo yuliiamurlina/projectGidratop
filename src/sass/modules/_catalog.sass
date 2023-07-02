@@ -1,0 +1,158 @@
+.catalog
+    min-height: 608px
+    padding: 0 75px
+    width: 100%
+    &__header
+        display: flex
+        justify-content: space-between
+        &_item
+            height: 60px
+            width: 35%
+            border-radius: 5px
+            border: 2px solid $light_color
+            border-right: none
+            cursor: pointer
+            &:last-child
+                border-right: 2px solid $light_color
+            .arrow-down
+                display: none
+            a
+                text-decoration: none
+                font-size: 16px
+                display: flex
+                text-align: center
+                justify-content: center
+                margin-top: 20px
+                img
+                    margin-top: 1px
+                span
+                    margin-left: 8px
+                    font-weight: 700
+            &.active
+                background-color: $light_color
+                border-bottom: 1px solid #fff
+                a
+                    color: $main_color2
+    &__subheader
+        background-color: $light_color
+        height: 60px
+        display: none
+        border-radius: 5px
+        ul
+            display: flex
+            justify-content: space-around
+            align-items: center
+            text-align: center
+            padding-top: 10px
+            li
+                list-style-type: none
+                width: 10%  
+                a
+                    @include linkWithoutFormatting
+                    font-size: 14px
+        &.active
+            display: block
+    &__cards
+        margin-top: 30px
+        display: flex
+        justify-content: space-between
+        .card
+            width: 23%
+            height: 375px
+            border: 1px solid $light_color
+            position: relative
+            border-radius: 8px
+            &-active
+                box-shadow: 1px 1px 4px 0px rgba(71, 152, 222, 0.70)
+                min-height: 430px
+
+            &__img
+                height: 50%
+                display: flex
+                img
+                    min-width: 150px
+                    max-width: 100%
+                    width: auto
+                    display: block
+                    margin: auto
+                    vertical-align: middle
+                    cursor: pointer
+
+            .label
+                width: 100px
+                height: 25px
+                background-color: #6CDB7E
+                color: #fff
+                position: absolute
+                top: 9px
+                right: 9px
+                font-size: 13px
+                text-align: center
+                padding: 3px
+            &__wrapper
+                height: 50%
+                padding: 0  8px 30px 20px 
+                h3
+                    font-size: 14px
+                    margin-bottom: 15px
+                    margin-top: 7px
+                    cursor: pointer
+                p
+                    font-size: 13px
+                .available
+                    margin-top: 10px
+                    color: $main_color2
+                    span
+                        color: $main_color2
+                .unavailable
+                    display: none
+                    margin-top: 10px
+                    color: red
+                    span
+                        color: red
+                .price
+                    font-size: 22px
+                    font-weight: 700
+                    color: #15244F
+                    margin-top: 20px
+                .hidden
+                    margin-top: 21px
+                    display: flex
+                    justify-content: space-between
+                    display: none
+                    button
+                        background-color: $main_color2
+                        width: 60%
+                        height: 40px
+                        color: #fff
+                        border: none
+                        cursor: pointer
+                        border-radius: 5px
+                        font-size: 16px
+                    &__pics
+                        a
+                            img
+                                width: 27px
+                                height: 27px
+                            &:last-child
+                                img
+                                    width: 30px
+                                    height: 30px
+    .add-card
+        display: block
+        width: 140px
+        height: 40px
+        border: 1px solid $main_color2
+        border-radius: 5px
+        background-color: #fff
+        margin: 30px auto 0
+        font-size: 14px
+        color: $main_color2
+        text-transform: uppercase
+        cursor: pointer
+        &:focus
+            border: none
+            background-color: $main_color2
+            color: #fff
+
+
