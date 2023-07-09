@@ -1,7 +1,6 @@
 
 
-    // big screen 4k
-
+    // big screen 4k===========================================================
 @media (min-width:2000px)
     .header
         height: 105px
@@ -131,10 +130,60 @@
                         font-size: 15px
                     .price
                         font-size: 35px
+    
+    .adt
+        &__aside
+            width: 300px
+            div
+                p
+                    font-size: 23px
+        &__main
+            &_header
+                font-size: 38px
+            &_wrapper
+                .item
+                    &__text
+                        h4
+                            font-size: 22px
+                        p
+                            font-size: 20px
+
+    .articles
+        height: 550px
+        .dots
+            width: 680px
+            margin-top: 91px
+            .arrow
+                @include arrowBack2000
+                padding: 13px 28px
+                position: absolute
+                top: 19px
+            .next
+                padding-left: 20px
+            .dots
+                width: 430px
+                bottom: 26px
+                div
+                    width: 57px
+                    height: 18px
+        &__wrapper
+            .item
+                h4
+                    font-size: 24px
+                    margin-top: -45px
+
+    .footer
+        &__subscription
+            .input
+                input
+                    height: 50px
+            .top
+                width: 50px
+                height: 50px
+                padding: 12px 13px
 
 
-    // big screen laptop
-
+// big screen laptop============================================================
 @media ((min-width:1441px) and (max-width:1999px))
     .header
         padding: 38px 76px 0
@@ -174,13 +223,19 @@
             span
                 margin-top: 11px
 
-
-
     .stock
         margin-top: 140px
 
-// laptop
-// @media ((min-width: 993px) and (max-width:1440px))
+    .articles
+        height: 430px
+        max-height: 430px
+        min-height: 260px
+        height: auto
+
+
+
+
+// laptop================================================================
 @media( max-width: 1440px )
     
     .header
@@ -237,10 +292,18 @@
                 li
                     width: unset
 
+    .adt
+        padding: 75px 120px 100px
+        height: 550px
+        &__main_header
+            font-size: 32px
+    
+    .articles
+        height: 280px
 
 
-// macbook
-// @media ((min-width: 769px) and (max-width:992px))
+
+// macbook=================================================================
 @media   ( max-width:  992px)
     
     .header
@@ -349,8 +412,39 @@
                     a
                         font-size: 12px
 
-// tablet
-// @media ((min-width: 577px) and (max-width:768px))
+    .adt
+        padding: 100px 20px 60px
+        &__aside
+            margin-right: 68px
+            width: 90px
+            div
+                span
+                    font-size: 65px
+                p
+                    font-size: 14px
+        &__main
+            &_header
+                font-size: 20px
+            &_wrapper
+                .item
+                    width: 47%  
+
+    .articles
+        padding: 0 20px 65px
+        height: 240px
+        overflow: hidden
+        &__wrapper
+            width: 153%
+            .item
+                img
+                    width: 160px
+                h4
+                    width: 160px
+    
+
+
+
+// tablet=============================================================================
 @media ( max-width:  768px)
     
     .header
@@ -423,6 +517,7 @@
                         width: 15px
                         height: 6px
     .catalog
+        margin-bottom: 40px
         &__subheader
             ul 
                 li 
@@ -434,10 +529,112 @@
             .card
                 width: 47%
                 margin-bottom: 10px
+    
+    .adt
+        max-height: 545px
+        min-height: 450px
+        height: auto
+        &__aside
+            margin-right: 40px
+        &__main
+            &_header
+                margin-top: -70px
+            &_wrapper
+                .item
+                    img
+                        width: 60px
+                        height: 60px
+                    &:nth-child(1)
+                        order: 0
+                    &:nth-child(2)
+                        order: 1
+                    &:nth-child(3)
+                        order: 5
+                        img
+                            width: 40px
+                            height: 40px
+                    &:nth-child(4)
+                        order: 3
+                        img
+                            width: 50px
+                            height: 50px
+                    &:nth-child(5)
+                        order: 4
+                    &:last-child
+                        order: 5
+                        img
+                            width: 40px
+                            height: 40px
+
+    .articles
+        &__wrapper
+            width: 212%
+            .item
+                h4
+                    font-size: 14px
+        .dots
+            margin-top: 90px
+
+    .footer
+        padding: 30px 18px
+        &__promo
+            img
+                width: 130px
+                height: auto
+        &__subitem
+            h4
+                font-size: 12px
+            .wrapper
+                a
+                    img
+                        width: 25px
+                    &:first-child
+                        img
+                            width: 33px
+        .card
+            .wrapper
+                a
+                    img
+                        width: 40px
+        &__column
+            h4
+                font-size: 14px
+            ul
+                li
+                    margin-top: 14px
+                    margin-left: 27px
+                    a
+                        font-size: 12px
+        .input
+            display: grid
+            grid-template-columns: 255px 95px
+            grid-template-rows: auto
+            bottom: 30px
+            right: 19px
+            input
+                width: 255px
+            button
+                width: 95px
+                font-size: 12px
+            span
+                width: 350px
+        .top
+            left: -72px
+            bottom: 64px
+            width: 30px
+            height: 30px
+            padding-top: 7px
+            img
+                width: 14px
+
+    
+    
+                        
+                        
 
 
 
-// mobile phone
+// mobile phone========================================================
 @media (max-width:576px)
     .header
         padding: 17px
@@ -548,10 +745,111 @@
                     height: 20px
                     font-size: 10px
 
+    .adt
+        flex-direction: column
+        padding-top: 0
+        &__aside
+            flex-direction: row
+            width: unset
+            position: relative
+            top: -3px
+            div
+                span
+                    font-size: 45px
+                p
+                    font-size: 13px
+                    margin-top: -5px
+        &__main
+            &_header
+                position: relative
+                top: -65px
+    
+    .articles
+        height: 270px
+        margin-top: 30px
+        &__hidden
+            display: flex
+            justify-content: space-between
+            margin: 20px 0
+            position: relative
+            h3
+                color: #15244F
+                font-weight: 700
+                z-index: 2
+            span
+                font-weight: 700
+                font-size: 50px
+                color: $light_color
+                margin: -22px 0 11px
+                position: absolute
+                z-index: 1
+                left: 27px
+                top: -3px
+            a
+                @include linkWithoutFormatting 
+                color: $main_color2
+                font-size: 14px
+                margin-top: 6px
+        &__wrapper
+            width: 212% 
+            .item
+                width: 29%
+                img
+                    width: 100%
+                h4
+                    width: 100%
+
+    .footer
+        height: 580px
+        flex-wrap: wrap
+        &__subitem
+            margin-top: 15px
+            h4
+                font-size: 12px
+            .wrapper
+                a
+                    img
+                        margin-bottom: 0
+        &__column
+            width: 48%
+            margin-top: -80px
+            ul
+                li
+                    margin-left: 0
+                    margin-top: 10px
+        &__promo
+            order: 0
+            margin-top: 0
+            img
+                width: 160px
+                margin-bottom: 14px
+        &__contacts
+            order: 1
+            margin-top: 64px
+            width: 43%
+            h4
+                display: none
+            ul
+                li
+                    img
+                        margin-bottom: -6px
+        &__customer
+            order: 2
+        &__company
+            order: 3
+        .input
+            width: 340px
+            bottom: 32px
+            span
+                width: unset
+        .top
+            right: 10px
+            bottom: 33px
+            left: unset
 
 
                 
-
+//mobile=======================================================
 @media (max-width:375px)
     .subheader
         &__wrapper
@@ -610,5 +908,75 @@
                 position: static
                 justify-content: center
                 transform: none
+    
+    .catalog
+        margin-bottom: 80px
+    
+    .adt
+        height: 330px
+        min-height: unset
+        max-height: unset
+        &__aside
+            margin-right: 0
+            flex-direction: row-reverse
+            div
+                width: 160px
+        &__main
+            &_header
+                font-size: 16px
+                top: -88px
+            &_wrapper
+                .item
+                    img
+                        // grid-area: img
+                        display: none
+                        width: 20px
+                        height: 20px
+                    &__text
+                        grid-area: text-wrapper
+                        h4
+                            grid-area: header
+                            font-size: 14px
+                        p
+                            grid-area: paragraph
+                            font-size: 13px
+                    &:nth-child(3n)
+                        display: none
+    
+    .articles
+        .dots
+            width: 250px
+            .dots
+                width: 150px
+                div
+                    width: 15px
+                    height: 7px
+            .arrow
+                @include arrowBack375
+                padding: 0 12px
+                div
+                    margin-top: 9px
+            .next
+                padding-left: 7px
+    
+    .footer
+        &__promo
+            img
+                width: 140px
+                margin-bottom: 0
+        .input
+            width: 310px
+            right: unset
+            grid-template-columns: 208px 77px
+            bottom: 16px
+            button
+                width: 78px
+                font-size: 11px
+        .top    
+            right: 18px
+            bottom: 18px
+                        
+        
+
 
     

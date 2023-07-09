@@ -1,0 +1,69 @@
+.adt
+    display: flex
+    background: url('../img/jpg/services.png') center center/cover no-repeat
+    height: 505px
+    padding: 100px 185px 100px 75px
+    &__aside
+        width: 255px
+        @include flex
+        margin-right: 85px
+        div
+            span
+                color: #6CDB7E
+                font-size: 75px
+            p
+                font-size: 16px
+                font-weight: 700
+    &__main
+        &_header
+            font-size: 35px
+            color: #15244F
+            font-weight: 300
+        &_wrapper
+            margin-top: 37px
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            .item
+                width: 30%
+                display: flex
+                margin-bottom: 27px
+                &:hover
+                    background-color: rgba(255, 255, 255, 0.407)
+                    border-radius: 5px
+                    transition: 0.7s all
+                    img
+                        transform: scale(1.1)
+                &__text
+                    display: flex
+                    flex-direction: column
+                    h4
+                        font-size: 16px
+                        color: #15244F
+                        margin-bottom: 10px
+                    p
+                        font-size: 14px
+                img
+                    margin-right: 10px
+                    width: 80px
+                    height: 80px
+                    // &:hover
+                    //     transform: scale(1.1)
+
+                &:nth-child(3)
+                    img
+                        width: 65px
+                        height: 63px
+                &:nth-child(4)
+                    img
+                        width: 70px
+                        height: 70px
+                &:last-child
+                    img
+                        height: 50px
+                        width: 50px
+            
+                    
+                    
+
+

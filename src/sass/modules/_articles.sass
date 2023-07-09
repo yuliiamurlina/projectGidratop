@@ -1,0 +1,61 @@
+.articles
+    height: 350px
+    position: relative
+    padding: 42px 75px 80px
+    &__hidden
+        display: none
+    &__wrapper
+        display: flex
+        .item
+            width: 16%
+            margin-right: 1%
+            &:last-child
+                margin-right: 0
+            &:hover
+                transform: scale(1.1)
+                transition: 0.7s all
+                z-index: 1
+            img
+                width: 100%
+            h4
+                font-size: 16px
+                font-weight: 700
+                color: #fff
+                margin-top: -33px
+                text-align: center
+                width: 100%
+
+    .dots
+        @include dots
+        bottom: 40px
+        width: 330px
+        position: relative
+        right: unset
+        transform: unset
+        margin: 95px auto 0
+        .arrow
+            @include arrowBack
+            padding: 3px 16px
+            background-color: #fff
+            border: 1px solid $light_color
+            border-radius: 2px
+            position: static
+            div
+                @include arrowDiv
+                margin-top: 12px
+                width: 0
+                height: 0
+        .dots
+            width: 200px
+            background-color: unset
+            margin-top: 37px
+        .prev
+            div
+                transform: rotate(135deg)
+                background-color: unset
+        .next
+            padding-left: 13px
+            right: 0
+            div
+                transform: rotate(-45deg)
+                background-color: unset
